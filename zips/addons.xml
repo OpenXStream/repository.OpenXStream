@@ -80,7 +80,7 @@
 			<banner>resources/media/banner.png</banner>
 		</assets>
     </extension>
-</addon><addon id="plugin.video.xship-nightly" version="2026-03-22~nightly" name="xShip-nightly" provider-name="openxstream">
+</addon><addon id="plugin.video.xship-nightly" version="2026.03.01~nightly" name="xShip-nightly" provider-name="openxstream">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
