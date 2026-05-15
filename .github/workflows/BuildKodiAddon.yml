@@ -91,9 +91,9 @@ jobs:
                     for root, dirs, files in os.walk(p_addon_path):
 
                         # Exclude .git directory
-                        if '.git' in dirs:
-                            dirs.remove('.git')
-
+                        EXCLUDED_DIRS = {'.git', '.github'}
+                        if any(d in dirs for d in EXCLUDED_DIRS):
+                        dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
                         for file in files:
                             if file == "__init__.py":
                                 continue
