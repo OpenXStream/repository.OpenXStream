@@ -89,11 +89,12 @@ jobs:
 
                 with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
                     for root, dirs, files in os.walk(p_addon_path):
-
                         # Exclude .git directory
                         EXCLUDED_DIRS = {'.git', '.github'}
+
                         if any(d in dirs for d in EXCLUDED_DIRS):
-                        dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
+                            dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
+
                         for file in files:
                             if file == "__init__.py":
                                 continue
