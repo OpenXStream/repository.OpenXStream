@@ -29,7 +29,7 @@ jobs:
       addon_repo: "plugin.video.xvault"
       addon_branch: "main"
   xStreamNightly:
-    needs: xShipMain
+    needs: xVaultMain
     permissions:
       contents: write
     uses: ./.github/workflows/BuildKodiAddon.yml
@@ -45,7 +45,7 @@ jobs:
       addon_repo: "plugin.video.xship"
       addon_branch: "nightly"
   xVaultNightly:
-    needs: xStreamNightly
+    needs: xShipNightly
     permissions:
       contents: write
     uses: ./.github/workflows/BuildKodiAddon.yml
