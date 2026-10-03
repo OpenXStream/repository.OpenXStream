@@ -80,6 +80,40 @@
 			<clearlogo>resources/clearlogo.png</clearlogo>
 		</assets>
 	</extension>
+</addon><addon id="plugin.video.xvault" version="2026.10.01.1" name="[B]xVAULT[/B]" provider-name="xVAULT">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" optional="true" />
+        <import addon="script.module.download-m3u8" optional="true" />
+        <import addon="script.module.six" optional="true" />
+        <import addon="script.module.pyaes" optional="true" />
+        <import addon="script.module.pyqrcode" optional="true" />
+        <import addon="script.module.infotagger" optional="true" />
+        <import addon="script.module.resolveurl" version="5.1.100" optional="true" />
+        <import addon="inputstream.adaptive" optional="true" />
+        <import addon="inputstream.ffmpegdirect" optional="true" />
+        <import addon="inputstream.rtmp" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+        
+        <import addon="script.module.pydevd" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Filme, Serien und LiveTV durchsuchen und wiedergeben</summary>
+        <summary lang="en_GB">Browse and play movies, TV shows and live TV</summary>
+        <description lang="de_DE">xVAULT ist ein Kodi-Video-Add-on zum Suchen, Verwalten und Wiedergeben von Filmen, Serien und LiveTV mit Quellenwahl, Favoriten, Wiedergabestatus und optionaler Synchronisation. Die offizielle Repository- und Updateadresse ist http://xvault.ddnss.de/. Support kann nur f&#252;r Installationen aus dem offiziellen xVAULT-Repository geleistet werden; Pakete aus fremden Repositories, Reuploads oder ver&#228;nderte Versionen lassen sich nicht zuverl&#228;ssig pr&#252;fen.</description>
+        <description lang="en_GB">xVAULT is a Kodi video add-on for browsing and playing movies, TV shows and live TV with source selection, favorites, watched status and optional synchronization. The official repository and update address is http://xvault.ddnss.de/. Support is available only for installations from the official xVAULT repository; packages from third-party repositories, reuploads or modified builds cannot be verified reliably.</description>
+        <website>http://xvault.ddnss.de/</website>
+        <platform>all</platform>
+        <assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+			<banner>resources/media/banner.png</banner>
+		</assets>
+    </extension>
 </addon><addon id="plugin.video.xship" version="2026.03.01" name="xShip" provider-name="openxstream">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
