@@ -1,92 +1,4 @@
-<addons><addon id="plugin.video.xship-nightly" version="2026.03.01~nightly" name="xShip-nightly" provider-name="openxstream">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.download-m3u8" optional="true" />
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.pyaes" />
-        <import addon="script.module.infotagger" />
-        <import addon="script.module.resolveurl" version="5.1.100" />
-        
-        <import addon="script.module.pydevd" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="de_DE">xShip: Der Fake</summary>
-        <summary lang="en_GB">xShip: The Fake</summary>
-        <assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<banner>resources/media/banner.png</banner>
-		</assets>
-    </extension>
-</addon><addon id="plugin.video.xstream-nightly" name="xStream-nightly" version="2026.10.06~nightly" provider-name="Modded by Akisame">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.pyaes" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de">xStream</summary>
-		<summary lang="en_GB">xStream</summary>
-		<description lang="de">xStream ist ein Video-Addon f&#252;r Kodi. xStream dient als Suchmaschine f&#252;r Filme und Serien auf verschiedenen Webseiten.</description>
-		<description lang="en_GB">xStream is a video add-on for Kodi. xStream serves as a search engine for films and series on various websites.</description>
-		<disclaimer lang="de">Sie k&#246;nnen dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
-		<disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
-		<language>de en</language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<banner>resources/banner.png</banner>
-			<clearlogo>resources/clearlogo.png</clearlogo>
-		</assets>
-	</extension>
-</addon><addon id="plugin.video.xvault-nightly" version="2026.10.01.1~nightly" name="[B]xVAULT[/B]-nightly" provider-name="xVAULT">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" optional="true" />
-        <import addon="script.module.download-m3u8" optional="true" />
-        <import addon="script.module.six" optional="true" />
-        <import addon="script.module.pyaes" optional="true" />
-        <import addon="script.module.pyqrcode" optional="true" />
-        <import addon="script.module.infotagger" optional="true" />
-        <import addon="script.module.resolveurl" version="5.1.100" optional="true" />
-        <import addon="inputstream.adaptive" optional="true" />
-        <import addon="inputstream.ffmpegdirect" optional="true" />
-        <import addon="inputstream.rtmp" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-        
-        <import addon="script.module.pydevd" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="de_DE">Filme, Serien und LiveTV durchsuchen und wiedergeben</summary>
-        <summary lang="en_GB">Browse and play movies, TV shows and live TV</summary>
-        <description lang="de_DE">xVAULT ist ein Kodi-Video-Add-on zum Suchen, Verwalten und Wiedergeben von Filmen, Serien und LiveTV mit Quellenwahl, Favoriten, Wiedergabestatus und optionaler Synchronisation. Die offizielle Repository- und Updateadresse ist http://xvault.ddnss.de/. Support kann nur f&#252;r Installationen aus dem offiziellen xVAULT-Repository geleistet werden; Pakete aus fremden Repositories, Reuploads oder ver&#228;nderte Versionen lassen sich nicht zuverl&#228;ssig pr&#252;fen.</description>
-        <description lang="en_GB">xVAULT is a Kodi video add-on for browsing and playing movies, TV shows and live TV with source selection, favorites, watched status and optional synchronization. The official repository and update address is http://xvault.ddnss.de/. Support is available only for installations from the official xVAULT repository; packages from third-party repositories, reuploads or modified builds cannot be verified reliably.</description>
-        <website>http://xvault.ddnss.de/</website>
-        <platform>all</platform>
-        <assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.png</fanart>
-			<banner>resources/media/banner.png</banner>
-		</assets>
-    </extension>
-</addon><addon id="plugin.video.xstream" name="xStream" version="2026.05.23" provider-name="Modded by Akisame">
+<addons><addon id="plugin.video.xstream" name="xStream" version="2026.05.23" provider-name="Modded by Akisame">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -148,6 +60,34 @@
 			<banner>resources/media/banner.png</banner>
 		</assets>
     </extension>
+</addon><addon id="plugin.video.xstream-nightly" name="xStream-nightly" version="2026.10.06~nightly" provider-name="Modded by Akisame">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.pyaes" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">xStream</summary>
+		<summary lang="en_GB">xStream</summary>
+		<description lang="de">xStream ist ein Video-Addon f&#252;r Kodi. xStream dient als Suchmaschine f&#252;r Filme und Serien auf verschiedenen Webseiten.</description>
+		<description lang="en_GB">xStream is a video add-on for Kodi. xStream serves as a search engine for films and series on various websites.</description>
+		<disclaimer lang="de">Sie k&#246;nnen dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
+		<disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
+		<language>de en</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<banner>resources/banner.png</banner>
+			<clearlogo>resources/clearlogo.png</clearlogo>
+		</assets>
+	</extension>
 </addon><addon id="plugin.video.xship" version="2026.03.01" name="xShip" provider-name="openxstream">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -171,6 +111,66 @@
         <assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
+			<banner>resources/media/banner.png</banner>
+		</assets>
+    </extension>
+</addon><addon id="plugin.video.xship-nightly" version="2026.03.01~nightly" name="xShip-nightly" provider-name="openxstream">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.download-m3u8" optional="true" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.pyaes" />
+        <import addon="script.module.infotagger" />
+        <import addon="script.module.resolveurl" version="5.1.100" />
+        
+        <import addon="script.module.pydevd" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">xShip: Der Fake</summary>
+        <summary lang="en_GB">xShip: The Fake</summary>
+        <assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<banner>resources/media/banner.png</banner>
+		</assets>
+    </extension>
+</addon><addon id="plugin.video.xvault-nightly" version="2026.10.01.1~nightly" name="[B]xVAULT[/B]-nightly" provider-name="xVAULT">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" optional="true" />
+        <import addon="script.module.download-m3u8" optional="true" />
+        <import addon="script.module.six" optional="true" />
+        <import addon="script.module.pyaes" optional="true" />
+        <import addon="script.module.pyqrcode" optional="true" />
+        <import addon="script.module.infotagger" optional="true" />
+        <import addon="script.module.resolveurl" version="5.1.100" optional="true" />
+        <import addon="inputstream.adaptive" optional="true" />
+        <import addon="inputstream.ffmpegdirect" optional="true" />
+        <import addon="inputstream.rtmp" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+        
+        <import addon="script.module.pydevd" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Filme, Serien und LiveTV durchsuchen und wiedergeben</summary>
+        <summary lang="en_GB">Browse and play movies, TV shows and live TV</summary>
+        <description lang="de_DE">xVAULT ist ein Kodi-Video-Add-on zum Suchen, Verwalten und Wiedergeben von Filmen, Serien und LiveTV mit Quellenwahl, Favoriten, Wiedergabestatus und optionaler Synchronisation. Die offizielle Repository- und Updateadresse ist http://xvault.ddnss.de/. Support kann nur f&#252;r Installationen aus dem offiziellen xVAULT-Repository geleistet werden; Pakete aus fremden Repositories, Reuploads oder ver&#228;nderte Versionen lassen sich nicht zuverl&#228;ssig pr&#252;fen.</description>
+        <description lang="en_GB">xVAULT is a Kodi video add-on for browsing and playing movies, TV shows and live TV with source selection, favorites, watched status and optional synchronization. The official repository and update address is http://xvault.ddnss.de/. Support is available only for installations from the official xVAULT repository; packages from third-party repositories, reuploads or modified builds cannot be verified reliably.</description>
+        <website>http://xvault.ddnss.de/</website>
+        <platform>all</platform>
+        <assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
 			<banner>resources/media/banner.png</banner>
 		</assets>
     </extension>
