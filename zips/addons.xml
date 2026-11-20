@@ -27,67 +27,6 @@
 			<clearlogo>resources/clearlogo.png</clearlogo>
 		</assets>
 	</extension>
-</addon><addon id="plugin.video.xvault-nightly" version="2026.11.01.1~nightly" name="[B]xVAULT[/B]-nightly" provider-name="xVAULT">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" optional="true" />
-        <import addon="script.module.download-m3u8" optional="true" />
-        <import addon="script.module.six" optional="true" />
-        <import addon="script.module.pyaes" optional="true" />
-        <import addon="script.module.pyqrcode" optional="true" />
-        <import addon="script.module.infotagger" optional="true" />
-        <import addon="script.module.resolveurl" version="5.1.100" optional="true" />
-        <import addon="inputstream.adaptive" optional="true" />
-        <import addon="inputstream.ffmpegdirect" optional="true" />
-        <import addon="inputstream.rtmp" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-        <import addon="visualization.xvault" optional="true" />
-        
-        <import addon="script.module.pydevd" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="de_DE">Filme, Serien, LiveTV und Radio durchsuchen und wiedergeben</summary>
-        <summary lang="en_GB">Browse and play movies, TV shows, live TV and radio</summary>
-        <description lang="de_DE">xVAULT ist ein Kodi-Add-on zum Suchen, Verwalten und Wiedergeben von Filmen, Serien, LiveTV und deutschen Radiosendern mit Quellenwahl, Favoriten, Wiedergabestatus und optionaler Synchronisation. Die offizielle Repository- und Updateadresse ist https://xvault.repowork.de/. Support kann nur f&#252;r Installationen aus dem offiziellen xVAULT-Repository geleistet werden; Pakete aus fremden Repositories, Reuploads oder ver&#228;nderte Versionen lassen sich nicht zuverl&#228;ssig pr&#252;fen.</description>
-        <description lang="en_GB">xVAULT is a Kodi add-on for browsing and playing movies, TV shows, live TV and German radio stations with source selection, favorites, watched status and optional synchronization. The official repository and update address is https://xvault.repowork.de/. Support is available only for installations from the official xVAULT repository; packages from third-party repositories, reuploads or modified builds cannot be verified reliably.</description>
-        <website>https://xvault.repowork.de/</website>
-        <platform>all</platform>
-        <assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.png</fanart>
-			<banner>resources/media/banner.png</banner>
-		</assets>
-    </extension>
-</addon><addon id="plugin.video.xship" version="2026.03.01" name="xShip" provider-name="openxstream">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.download-m3u8" optional="true" />
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.pyaes" />
-        <import addon="script.module.infotagger" />
-        <import addon="script.module.resolveurl" version="5.1.100" />
-        
-        <import addon="script.module.pydevd" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="de_DE">xShip: Der Fake</summary>
-        <summary lang="en_GB">xShip: The Fake</summary>
-        <assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<banner>resources/media/banner.png</banner>
-		</assets>
-    </extension>
 </addon><addon id="plugin.video.xship-nightly" version="2026.03.01~nightly" name="xShip-nightly" provider-name="openxstream">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -173,6 +112,67 @@
         <assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.png</fanart>
+			<banner>resources/media/banner.png</banner>
+		</assets>
+    </extension>
+</addon><addon id="plugin.video.xvault-nightly" version="2026.11.01.1~nightly" name="[B]xVAULT[/B]-nightly" provider-name="xVAULT">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" optional="true" />
+        <import addon="script.module.download-m3u8" optional="true" />
+        <import addon="script.module.six" optional="true" />
+        <import addon="script.module.pyaes" optional="true" />
+        <import addon="script.module.pyqrcode" optional="true" />
+        <import addon="script.module.infotagger" optional="true" />
+        <import addon="script.module.resolveurl" version="5.1.100" optional="true" />
+        <import addon="inputstream.adaptive" optional="true" />
+        <import addon="inputstream.ffmpegdirect" optional="true" />
+        <import addon="inputstream.rtmp" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="visualization.xvault" optional="true" />
+        
+        <import addon="script.module.pydevd" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Filme, Serien, LiveTV und Radio durchsuchen und wiedergeben</summary>
+        <summary lang="en_GB">Browse and play movies, TV shows, live TV and radio</summary>
+        <description lang="de_DE">xVAULT ist ein Kodi-Add-on zum Suchen, Verwalten und Wiedergeben von Filmen, Serien, LiveTV und deutschen Radiosendern mit Quellenwahl, Favoriten, Wiedergabestatus und optionaler Synchronisation. Die offizielle Repository- und Updateadresse ist https://xvault.repowork.de/. Support kann nur f&#252;r Installationen aus dem offiziellen xVAULT-Repository geleistet werden; Pakete aus fremden Repositories, Reuploads oder ver&#228;nderte Versionen lassen sich nicht zuverl&#228;ssig pr&#252;fen.</description>
+        <description lang="en_GB">xVAULT is a Kodi add-on for browsing and playing movies, TV shows, live TV and German radio stations with source selection, favorites, watched status and optional synchronization. The official repository and update address is https://xvault.repowork.de/. Support is available only for installations from the official xVAULT repository; packages from third-party repositories, reuploads or modified builds cannot be verified reliably.</description>
+        <website>https://xvault.repowork.de/</website>
+        <platform>all</platform>
+        <assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+			<banner>resources/media/banner.png</banner>
+		</assets>
+    </extension>
+</addon><addon id="plugin.video.xship" version="2026.03.01" name="xShip" provider-name="openxstream">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.download-m3u8" optional="true" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.pyaes" />
+        <import addon="script.module.infotagger" />
+        <import addon="script.module.resolveurl" version="5.1.100" />
+        
+        <import addon="script.module.pydevd" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">xShip: Der Fake</summary>
+        <summary lang="en_GB">xShip: The Fake</summary>
+        <assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
 			<banner>resources/media/banner.png</banner>
 		</assets>
     </extension>
